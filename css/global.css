@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: normal;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    max-width: 480px;
+    margin: auto;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+.tamanho-maximo{
+    width: 90%;
+    align-self: center;
+}
+.btn-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+}
+.btn-primario{
+    background-color: #19191B;
+    color: white;
+}
+.btn-secundario{
+    background-color: #efeff0;
+    color: #61646b;
+}
