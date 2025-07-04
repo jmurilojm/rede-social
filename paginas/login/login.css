@@ -1,32 +1,18 @@
-.tips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
-    margin-bottom: 10px;
+/* LINK DE RECUPERACAO */
+.center {
+    text-align: center;
+}
+.center a:link {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: .6rem;
+    font-weight: bolder;
 }
 
-.tip {
-    display: flex;
-    align-items: center;
-    width: 40%;
+.center a:hover {
+    color: blue;
 }
 
-.tip-icon {
-    width: .4rem;
-    height: .4rem;
-    border-radius: 50%;
-}
-
-.tip-text {
-    font-size: .5rem;
-    padding: 0 10px;
-}
-
-.sucesso {
-    background-color: green;
-}
-
-.erro {
-    background-color: red;
+.center a:visited {
+    color: gray;
 }
