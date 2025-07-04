@@ -1,13 +1,18 @@
+html{
+    font-size: 18px;
+}
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: normal;
+    max-width: 80%;
+    margin: 0 auto;
 }
 main{
     display: flex;
@@ -18,7 +23,7 @@ main{
     height: 100vh;
 }
 .tamanho-maximo{
-    width: 90%;
+    width: 80%;
     align-self: center;
 }
 .btn-grupo{
@@ -26,14 +31,15 @@ main{
     flex-direction: column;
     gap: 10px;
 }
-.btn{
-    padding: 12px 20px;
+a.btn{
+    padding: 10px 0;
     border: none;
     border-radius: 24px;
-    font-size: 16px;
     cursor: pointer;
-    width: 95%;
+    text-align: center;
+    width: 90%;
     margin: auto;
+    text-decoration: none;
 }
 .btn-primario{
     background-color: #19191B;
@@ -42,4 +48,51 @@ main{
 .btn-secundario{
     background-color: #efeff0;
     color: #61646b;
+}
+.btn-cancelar{
+    background-color: #c00;
+    color: #fff;
+}
+
+.formulario-center{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.formulario-grupo{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.formulario-grupo label{
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.formulario-grupo input{
+    border: 1px solid #61646b;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+.formulario-grupo input::placeholder{
+    color: #61646b;
+}
+
+.input-icone{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input-icone input{
+    width: 100%;
+}
+.input-icone i{
+    position: absolute;
+    right: 5%;
+    top: 8px;
+    color: #AFB1B6;
+    cursor: pointer;
 }
