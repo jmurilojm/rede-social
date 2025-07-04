@@ -1,20 +1,23 @@
-html{
+html {
     font-size: 18px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.title{
+
+.title {
     font-size: 1.4rem;
     text-align: center;
     font-weight: normal;
     max-width: 80%;
     margin: 0 auto;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     max-width: 480px;
@@ -22,16 +25,19 @@ main{
     justify-content: space-evenly;
     height: 100vh;
 }
-.tamanho-maximo{
+
+.tamanho-maximo {
     width: 80%;
     align-self: center;
 }
-.btn-grupo{
+
+.btn-grupo {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-a.btn{
+
+a.btn {
     padding: 10px 0;
     border: none;
     border-radius: 24px;
@@ -41,58 +47,82 @@ a.btn{
     margin: auto;
     text-decoration: none;
 }
-.btn-primario{
+
+.btn-primario {
     background-color: #19191B;
     color: white;
 }
-.btn-secundario{
+
+.btn-secundario {
     background-color: #efeff0;
     color: #61646b;
 }
-.btn-cancelar{
+
+.btn-cancelar {
     background-color: #c00;
     color: #fff;
 }
 
-.formulario-center{
+.formulario-center {
     width: 90%;
     margin: 0 auto;
 }
 
-.formulario-grupo{
+.formulario-grupo {
     display: flex;
     flex-direction: column;
     gap: 3px;
 }
 
-.formulario-grupo label{
+.formulario-grupo label {
     font-size: .8rem;
     font-weight: bold;
 }
 
-.formulario-grupo input{
+.formulario-grupo input {
     border: 1px solid #61646b;
     border-radius: 8px;
     padding: 8px 10px;
     margin-bottom: 10px;
 }
-.formulario-grupo input::placeholder{
+
+.formulario-grupo input::placeholder {
     color: #61646b;
 }
 
-.input-icone{
+.input-icone {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.input-icone input{
+.input-icone input {
     width: 100%;
 }
-.input-icone i{
+
+.input-icone i {
     position: absolute;
     right: 5%;
     top: 8px;
     color: #AFB1B6;
     cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+.center a:link {
+    color: dodgerblue;
+    text-decoration: none;
+    font-size: .6rem;
+    font-weight: bolder;
+}
+
+.center a:hover {
+    color: blue;
+}
+
+.center a:visited {
+    color: gray;
 }

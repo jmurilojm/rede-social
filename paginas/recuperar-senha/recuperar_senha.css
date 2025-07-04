@@ -1,0 +1,16 @@
+.icon-circulo {
+    width: 200px;
+    height: 200px;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circulo i {
+    color: gray;
+    font-size: 3rem;
+}
