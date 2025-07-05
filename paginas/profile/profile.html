@@ -5,108 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timeline - Crazy People - A Rede Social</title>
+    <title>Profile - Crazy People - A Rede Social</title>
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="profile.css">
     <link rel="stylesheet" href="../../css/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 
 <body>
     <header>
         <div class="icone-menu">
-            <i class="fa-solid fa-bars"></i>
+            <a href="/paginas/feed/feed.html"><i class="fa-solid fa-chevron-left"></i></a>
         </div>
 
-        <div class="titulo-pagina">Crazy People</div>
+        <div class="titulo-pagina">Fulano de Tal</div>
 
-        <div class="notificacao-elemento">
+        <!--<div class="notificacao-elemento">
             <a href="">
-                <i class="fa-solid fa-bell">
-                    <div class="bolinha"><!--bolinha--></div>
-                </i>
-
-                <div class="flecha">
-                    <img src="/imagens/ponta_de_flecha.png" alt="">
-                </div>
-                <div class="notificacao-conteudo">
-                    <div class="notificacao-card">
-                        <div class="notificacao-contato">
-                            <div class="foto-elemento">
-                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
-                            </div>
-                            <p>Beltrano de Tal</p>
-                        </div>
-                        <div class="notificacao-texto">
-                            <p>Quero fazer parte da sua rede!</p>
-                        </div>
-                        <div class="notificacao-botoes">
-                            <button class="btn-cancelar">Cancelar</button>
-                            <button class="btn-aceitar">Aceitar</button>
-                        </div>
-                    </div>
-
-                    <div class="notificacao-card">
-                        <div class="notificacao-contato">
-                            <div class="foto-elemento">
-                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
-                            </div>
-                            <p>Cicrano da Silva</p>
-                        </div>
-                        <div class="notificacao-texto">
-                            <p>Bom dia!</p>
-                        </div>
-                        <div class="notificacao-botoes">
-                            <button class="btn-cancelar">Cancelar</button>
-                            <button class="btn-aceitar">Aceitar</button>
-                        </div>
-                    </div>
-
-                    <div class="notificacao-card">
-                        <div class="notificacao-contato">
-                            <div class="foto-elemento">
-                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
-                            </div>
-                            <p>Gonzaga Mameleiro</p>
-                        </div>
-                        <div class="notificacao-texto">
-                            <p>Ola! Passando aqui para solicitar para fazer parte de seu ciclo de amizade.</p>
-                        </div>
-                        <div class="notificacao-botoes">
-                            <button class="btn-cancelar">Cancelar</button>
-                            <button class="btn-aceitar">Aceitar</button>
-                        </div>
-                    </div>
-                </div>
+                <i class="fa-solid fa-gear"></i>
             </a>
-        </div>
-
-        <div class="foto-elemento">
-            <a href="/paginas/profile/profile.html">
-                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
-            </a> 
-            <i>
-                <img src="/imagens/bolinha.png" alt="bolinha de notificacao">
-            </i>
-        </div>
+        </div>-->
     </header>
 
 
-    <!-- SECAO DE POSTAGEM -->
-    <section class="secao-postagem">
-        <form class="fomulario-postagem" action="" method="post">
-            <textarea name="text-post" id="text-post" cols="60" rows="1" placeholder="Escreva..."></textarea>
-
-            <div class="grupo-comandos">
-                <div class="botoes-arquivos">
-                    <a href=""><i class="fa-regular fa-image"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </div>
-
-                <button class="btn-azul-elemento">Publicar <i class="fa-regular fa-paper-plane"></i></button>
+    <section class="profile">
+        <div class="profile-top"></div>
+        <div class="informacoes-usuario">
+            <div class="foto-perfil">
+                <img src="/imagens/avatar.png" alt="foto de perfil">
+                <a href=""><img src="/imagens/camera.png" alt="imagem de uma camera para edicao da foto de perfil"></a>
             </div>
-        </form>
+
+            <h2 class="nome-usuario">Fulano de Tal</h2>
+            <p class="seguidores"><span>201</span> seguidores</p>
+            <button class="btn-azul-elemento btn-seguir"><i class="fa-solid fa-user-plus"></i> Adicionar</button>
+        </div>
     </section>
 
+
+    <h4>Últimas Publicações</h4>
 
     <!-- SECAO DE CARDS -->
     <section>

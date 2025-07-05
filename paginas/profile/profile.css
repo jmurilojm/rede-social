@@ -1,0 +1,210 @@
+/* GERAL */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #333;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 480px;
+}
+
+header {
+    color: white;
+    padding: 10px;
+    background-color: black;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+h4 {
+    color: white;
+}
+
+.relativo {
+    position: relative;
+}
+
+.titulo-pagina {
+    font-weight: bold;
+    flex: 1;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* IONE DE VOLTAR */
+.icone-menu a {
+    color: white;
+}
+
+.icone-menu i {
+    width: 30px;
+}
+
+
+/* EDICAO DO HEADER PROFILE */
+.profile {
+    background-color: black;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.profile-top {
+    background-color: dodgerblue;
+    height: 15vh;
+}
+
+
+/* AREA DE INFROMACOES DO USUARIO */
+.informacoes-usuario {
+    position: absolute;
+    top: 3vh;
+    right: 25%;
+    left: 25%;
+}
+
+.informacoes-usuario img {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.btn-seguir i {
+    margin-right: 10px;
+}
+
+.foto-perfil {
+    position: relative;
+}
+
+.foto-perfil a img {
+    width: 30px;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+}
+
+
+/* ELEMENTOS */
+.foto-elemento {
+    position: relative;
+    display: flex;
+}
+
+.foto-elemento img {
+    width: 35px;
+}
+
+.foto-elemento i img {
+    width: 10px;
+    position: absolute;
+    right: 1px;
+    display: non;
+}
+
+.btn-azul-elemento {
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+
+/*.btn-azul-elemento i {
+    color: white;
+}*/
+
+.notificacao-elemento a {
+    color: white;
+}
+
+/* CARTAO DE POSTAGENS*/
+.card {
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.id-usuario {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+/* PERFIL DO USUARIO NA POSTAGEM */
+.usuario-nome {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.usuario-foto {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-foto img {
+    top: 3px;
+}
+
+/* POSTAGEM */
+.postagem-texto {
+    text-align: justify;
+}
+
+.postagem-midia img {
+    width: 100%;
+}
+
+/* CARTAO VIDEO */
+.postagem-midia iframe {
+    aspect-ratio: 16/9;
+    border: none;
+    width: 100%;
+}
+
+/* BOTOES DE ACAO */
+.caixa-btn-reacoes .reacoes {
+    background-color: #0005;
+    position: absolute;
+    top: -10px;
+    padding: 0 10px;
+    border-radius: 50px;
+    display: none;
+    gap: 10px;
+}
+
+.caixa-btn-reacoes .reacoes {
+    font-size: 20px;
+}
+
+.caixa-btn-reacoes {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.btn-acao:hover .reacoes {
+    display: flex;
+}
+
+.btn-icones {
+    flex: 1;
+    display: flex;
+}
+
+.btn-icones .btn-acao {
+    color: gray;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
