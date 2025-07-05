@@ -1,0 +1,294 @@
+/* GERAL */
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 480px;
+}
+
+header {
+    color: white;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.relativo {
+    position: relative;
+}
+
+.titulo-pagina {
+    font-weight: bold;
+    flex: 1;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+
+/* ELEMENTOS */
+.foto-elemento {
+    position: relative;
+    display: flex;
+}
+
+.foto-elemento img {
+    width: 35px;
+}
+
+.foto-elemento i img {
+    width: 10px;
+    position: absolute;
+    right: 1px;
+    display: non;
+}
+
+.btn-azul-elemento {
+    color: white;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 20px;
+}
+
+.btn-azul-elemento i {
+    color: white;
+}
+
+
+
+/* NOTIFICACAO E BOLINHA BRANCA */
+.notificacao-elemento {
+    position: relative;
+}
+
+.notificacao-elemento .bolinha {
+    background-color: white;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: non;
+}
+
+.notificacao-elemento a {
+    color: white;
+}
+
+/* BLOCO DE NOTIFICACOES */
+.notificacao-elemento a:hover .notificacao-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+.notificacao-elemento a:hover .flecha{
+    display: flex;
+}
+
+.flecha{
+    position: absolute;
+    right: -4px;
+    margin-top: 1px;
+    z-index: 1;
+    display: none;
+}
+
+.notificacao-conteudo {
+    width: 200px;
+    min-height: 100px;
+    position: absolute;
+    top: 25px;
+    right: -80px;
+    display: none;
+    padding: 5px 3px 0;
+    background-color: black;
+    border-radius: 8px;
+}
+
+.notificacao-card {
+    background-color: white;
+    min-height: 80%;
+    padding: 5px;
+    color: black;
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px lightgray;
+    margin-bottom: 10px;
+}
+
+.notificacao-contato {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.notificacao-contato img {
+    width: 30px;
+    height: 30px;
+}
+
+.notificacao-contato p {
+    font-size: .8em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.notificacao-texto p {
+    margin: 10px 0;
+    font-size: .6em;
+}
+
+.notificacao-botoes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.notificacao-botoes .btn-cancelar {
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    border-radius: 5px;
+    width: 45%;
+    font-size: .6em;
+}
+
+.notificacao-botoes .btn-aceitar {
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 45%;
+    font-size: .6em;
+}
+
+
+
+/* CAIXA PARA POSTAGENS */
+.secao-postagem {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.fomulario-postagem {
+    margin: 0 auto;
+}
+
+.fomulario-postagem textarea {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+}
+
+.grupo-comandos {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px 0 15px;
+}
+
+.grupo-comandos a i {
+    color: gray;
+}
+
+.botoes-arquivos {
+    flex: 1;
+}
+
+.botoes-arquivos i {
+    margin-right: 10px;
+}
+
+
+
+/* CARTAO DE POSTAGENS*/
+.card {
+    background-color: white;
+    width: 90%;
+    margin: 10px auto;
+    min-height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.id-usuario {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+/* PERFIL DO USUARIO NA POSTAGEM */
+.usuario-nome {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.usuario-foto {
+    display: flex;
+    align-items: center;
+}
+
+.usuario-foto img {
+    top: 3px;
+}
+
+/* POSTAGEM */
+.postagem-texto {
+    text-align: justify;
+}
+
+.postagem-midia img {
+    width: 100%;
+}
+
+/* CARTAO VIDEO */
+.postagem-midia iframe {
+    aspect-ratio: 16/9;
+    border: none;
+    width: 100%;
+}
+
+/* BOTOES DE ACAO */
+.caixa-btn-reacoes .reacoes {
+    background-color: #0005;
+    position: absolute;
+    top: -10px;
+    padding: 0 10px;
+    border-radius: 50px;
+    display: none;
+    gap: 10px;
+}
+
+.caixa-btn-reacoes .reacoes {
+    font-size: 20px;
+}
+
+.caixa-btn-reacoes {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.btn-acao:hover .reacoes {
+    display: flex;
+}
+
+.btn-icones {
+    flex: 1;
+    display: flex;
+}
+
+.btn-icones .btn-acao {
+    color: gray;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}

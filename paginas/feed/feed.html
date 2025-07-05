@@ -1,12 +1,250 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline - Crazy People - A Rede Social</title>
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="../../css/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="icone-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="titulo-pagina">Crazy People</div>
+
+        <div class="notificacao-elemento">
+            <a href="">
+                <i class="fa-solid fa-bell">
+                    <div class="bolinha"><!--bolinha--></div>
+                </i>
+
+                <div class="flecha">
+                    <img src="/imagens/ponta_de_flecha.png" alt="">
+                </div>
+                <div class="notificacao-conteudo">
+                    <div class="notificacao-card">
+                        <div class="notificacao-contato">
+                            <div class="foto-elemento">
+                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                            </div>
+                            <p>Beltrano de Tal</p>
+                        </div>
+                        <div class="notificacao-texto">
+                            <p>Quero fazer parte da sua rede!</p>
+                        </div>
+                        <div class="notificacao-botoes">
+                            <button class="btn-cancelar">Cancelar</button>
+                            <button class="btn-aceitar">Aceitar</button>
+                        </div>
+                    </div>
+
+                    <div class="notificacao-card">
+                        <div class="notificacao-contato">
+                            <div class="foto-elemento">
+                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                            </div>
+                            <p>Cicrano da Silva</p>
+                        </div>
+                        <div class="notificacao-texto">
+                            <p>Bom dia!</p>
+                        </div>
+                        <div class="notificacao-botoes">
+                            <button class="btn-cancelar">Cancelar</button>
+                            <button class="btn-aceitar">Aceitar</button>
+                        </div>
+                    </div>
+
+                    <div class="notificacao-card">
+                        <div class="notificacao-contato">
+                            <div class="foto-elemento">
+                                <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                            </div>
+                            <p>Gonzaga Mameleiro</p>
+                        </div>
+                        <div class="notificacao-texto">
+                            <p>Ola! Passando aqui para solicitar para fazer parte de seu ciclo de amizade.</p>
+                        </div>
+                        <div class="notificacao-botoes">
+                            <button class="btn-cancelar">Cancelar</button>
+                            <button class="btn-aceitar">Aceitar</button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="foto-elemento">
+            <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+            <i>
+                <img src="/imagens/bolinha.png" alt="bolinha de notificacao">
+            </i>
+        </div>
+
+        <div class="menu-configuracoes">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+        <!--<div class="notificacao-conteudo">
+            <div class="notificacao-card">
+                <div class="notificacao-contato">
+                    <div class="foto-elemento">
+                        <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                    </div>
+                    <p>Beltrano de Tal</p>
+                </div>
+                <div class="notificacao-texto">
+                    <p>Quero fazer parte da sua rede!</p>
+                </div>
+                <div class="notificacao-botoes">
+                    <button class="btn-cancelar">Cancelar</button>
+                    <button class="btn-aceitar">Aceitar</button>
+                </div>
+            </div>
+        </div>-->
+    </header>
+
+
+    <!-- SECAO DE POSTAGEM -->
+    <section class="secao-postagem">
+        <form class="fomulario-postagem" action="" method="post">
+            <textarea name="text-post" id="text-post" cols="60" rows="1" placeholder="Escreva..."></textarea>
+
+            <div class="grupo-comandos">
+                <div class="botoes-arquivos">
+                    <a href=""><i class="fa-regular fa-image"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+                <button class="btn-azul-elemento">Publicar <i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </section>
+
+
+    <!-- SECAO DE CARDS -->
+    <section>
+        <div class="card">
+            <div class="id-usuario">
+                <div class="foto-elemento">
+                    <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                    <i>
+                        <img src="/imagens/bolinha.png" alt="bolinha de notificacao">
+                    </i>
+                </div>
+                <div class="usuario-nome">Fulano de Tal</div>
+            </div>
+
+            <div class="postagem-texto">
+                <p>Quem nunca se pegou passando horas e horas rolando
+                    o feed do Instagram? Ou então, perdido em um mar de
+                    tweets engraçados no Twitter?</p>
+            </div>
+            <div class="postagem-midia">
+                <img src="/imagens/sem_imagem.png" alt="imagem de postagem vazia">
+            </div>
+
+            <div class="caixa-btn-reacoes relativo">
+
+                <div class="btn-icones">
+                    <div class="btn-acao">
+                        <span class="cursor">&#128562; Loko</span>
+                        <div class="reacoes">
+                            <a href="https://www.google.com.br">&#128561;</a>
+                            <a href="https://www.wikipedia.com">&#128565;</a>
+                            <a href="https://www.youtube.com.br">&#128557;</a>
+                        </div>
+                    </div>
+                    <button class="btn-acao">
+                        <i class="fa-regular fa-comment"></i> Comentário
+                    </button>
+                </div>
+
+                <button class="btn-azul-elemento">Compartilhar <i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="id-usuario">
+                <div class="foto-elemento">
+                    <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                    <i>
+                        <img src="/imagens/bolinha.png" alt="bolinha de notificacao">
+                    </i>
+                </div>
+                <div class="usuario-nome">Fulano de Tal</div>
+            </div>
+
+            <div class="postagem-texto">
+                <p>Quem nunca se pegou passando horas e horas rolando
+                    o feed do Instagram? Ou então, perdido em um mar de
+                    tweets engraçados no Twitter?</p>
+            </div>
+
+            <div class="caixa-btn-reacoes relativo">
+                <div class="btn-icones">
+                    <div class="btn-acao">
+                        <span class="cursor">&#128562; Loko</span>
+                        <div class="reacoes">
+                            <a href="https://www.google.com.br">&#128561;</a>
+                            <a href="https://www.wikipedia.com">&#128565;</a>
+                            <a href="https://www.youtube.com.br">&#128557;</a>
+                        </div>
+                    </div>
+                    <button class="btn-acao">
+                        <i class="fa-regular fa-comment"></i> Comentário
+                    </button>
+                </div>
+
+                <button class="btn-azul-elemento">Compartilhar <i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="id-usuario">
+                <div class="foto-elemento">
+                    <img src="../../imagens/avatar_mini.png" alt="imagem de perfil">
+                    <i>
+                        <img src="/imagens/bolinha.png" alt="bolinha de notificacao">
+                    </i>
+                </div>
+                <div class="usuario-nome">Fulano de Tal</div>
+            </div>
+
+            <div class="postagem-texto">
+                <p>Quem nunca se pegou passando horas e horas rolando
+                    o feed do Instagram? Ou então, perdido em um mar de
+                    tweets engraçados no Twitter?</p>
+            </div>
+            <div class="postagem-midia">
+                <iframe src="https://www.youtube.com/embed/aJRYG93boKc" title="video do yt" controls></iframe>
+            </div>
+
+            <div class="caixa-btn-reacoes relativo">
+                <div class="btn-icones">
+                    <div class="btn-acao">
+                        <span class="cursor">&#128562; Loko</span>
+                        <div class="reacoes">
+                            <a href="https://www.google.com.br">&#128561;</a>
+                            <a href="https://www.wikipedia.com">&#128565;</a>
+                            <a href="https://www.youtube.com.br">&#128557;</a>
+                        </div>
+                    </div>
+                    <button class="btn-acao cursor">
+                        <i class="fa-regular fa-comment"></i> Comentário
+                    </button>
+                </div>
+
+                <button class="btn-azul-elemento">Compartilhar <i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
