@@ -16,3 +16,17 @@
 .center a:visited {
     color: gray;
 }
+
+.btn-grupo-login{
+    margin-top: 40px;
+}
+
+.btn-primario-input{
+    background-color: #19191B;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+}
+.btn-secundario-input{
+    width: 100%;
+}
