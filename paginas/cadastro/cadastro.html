@@ -17,37 +17,46 @@
         <form class="formulario-center" action="" onsubmit="return false" method="post">
             <div class="formulario-grupo">
                 <label for="">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                <input type="text" name="nome" id="inNome" placeholder="Nome completo" onkeyup="limparMensagemDeErro('outMsmErroName')">
+                <span class="msmErro" id="outMsmErroName"></span>
             </div>
+
             <div class="formulario-grupo">
                 <label for="">E-Mail</label>
-                <input type="email" name="e-mail" id="email" placeholder="exemplo@email.com">
+                <input type="email" name="e-mail" id="inEmail" placeholder="exemplo@email.com" onkeyup="limparMensagemDeErro('outMsmErroEmail')">
+                <span class="msmErro" id="outMsmErroEmail"></span>
             </div>
+
             <div class="formulario-grupo">
                 <label for="">Senha</label>
                 <div class="input-icone">
-                    <input type="password" name="senha" id="senha">
-                    <i class="fa-regular fa-eye"></i>
-                    <!--<i class="fa-regular fa-eye-slash"></i>-->
+                    <input type="password" name="senha" id="inSenha" onkeyup="limparMensagemDeErro('outMsmErroSenha')">
+                    <i class="fa-regular fa-eye-slash" id="iconeSenha" onclick="mostrarSenha('inSenha','iconeSenha')"></i>
+                    <!--<i class="fa-regular fa-eye"></i>-->
+                    
                 </div>
+                <span class="msmErro" id="outMsmErroSenha"></span>
             </div>
+
             <div class="formulario-grupo">
                 <label for="">Confirme a senha</label>
                 <div class="input-icone">
-                    <input type="password" name="confirmacao-senha" id="confirmacao-senha">
-                    <i class="fa-regular fa-eye"></i>
-                    <!--<i class="fa-regular fa-eye-slash"></i>-->
+                    <input type="password" name="confirmacao-senha" id="inConfirmacaoSenha" onkeyup="limparMensagemDeErro('outMsmErroConfrimacaoSenha')">
+                    <i class="fa-regular fa-eye-slash" id="iconeConfirmacaoSenha" onclick="mostrarSenha('inConfirmacaoSenha','iconeConfirmacaoSenha')"></i>
+                    <!--<i class="fa-regular fa-eye"></i>-->
                 </div>
-
+                <span class="msmErro" id="outMsmErroConfrimacaoSenha"></span>
             </div>
         </form>
 
         <div class="btn-grupo">
-            <a href="" class="btn btn-primario">Confirmar Cadastro</a>
+            <a href="" class="btn btn-primario" onclick="registrar(event)">Confirmar Cadastro</a>
             <a href="../../index.html" class="btn btn-cancelar">Cancelar</a>
         </div>
 
     </main>
+
+    <script src="/js/cadastro.js"></script>
 </body>
 
 </html>

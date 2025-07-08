@@ -101,6 +101,8 @@ main {
     border: 1px solid #61646b;
     border-radius: 8px;
     padding: 8px 10px;
+}
+.formulario-grupo span{
     margin-bottom: 10px;
 }
 
@@ -161,4 +163,9 @@ main {
 
 .erro {
     background-color: red;
+}
+
+.msmErro{
+    color: red;
+    font-size: .6rem;
 }
