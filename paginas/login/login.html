@@ -15,16 +15,18 @@
     <main>
         <h1 class="titulo">Bem-vindo de volta à loucura!</h1>
 
-        <form class="formulario-center" action=""  method="post" onsubmit="return logar()">
+        <form class="formulario-center" action="" method="post" onsubmit="return logar()">
             <div class="formulario-grupo">
                 <label for="">E-Mail</label>
-                <input type="email" name="e-mail" id="inEmail" placeholder="exemplo@email.com" onkeyup="limparMensagemDeErro('outMsmErroEmail')">
+                <input type="email" name="e-mail" id="inEmail" placeholder="exemplo@email.com"
+                    onkeyup="limparMensagemDeErro('outMsmErroEmail')">
                 <span class="msmErro" id="outMsmErroEmail"></span>
             </div>
             <div class="formulario-grupo">
                 <label for="">Senha</label>
                 <div class="input-icone">
-                    <input type="password" name="senha" id="inSenha" onkeydown="mostrarErroSenha()" onkeyup="mostrarErroSenha()">
+                    <input type="password" name="senha" id="inSenha" onkeydown="mostrarErroSenha()"
+                        onkeyup="mostrarErroSenha()">
                     <i class="fa-regular fa-eye" id="iconeSenha" onclick="mostrarSenha('inSenha','iconeSenha')"></i>
                 </div>
             </div>
@@ -59,7 +61,7 @@
             </div>
         </form>
 
-        
+
     </main>
 
     <script src="/js/global.js"></script>

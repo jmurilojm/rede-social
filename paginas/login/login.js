@@ -1,8 +1,10 @@
-function logar(){
+function logar() {
     let emailInformado = document.getElementById('inEmail').value
     let senhaInformada = document.getElementById('inSenha').value
 
     if (validarLogin(emailInformado, senhaInformada)) {
+        limparCampos()
+
         window.location.href = '../feed/feed.html'
     }
     return false
@@ -24,12 +26,12 @@ function validarLogin(email, senha) {
 
 
 // configurando confirmação visual por meio dos pontinhos
-function mostrarErroSenha(){
+function mostrarErroSenha() {
     let senhaInformada = document.getElementById('inSenha').value.trim()
     if (!/[A-Z]/.test(senhaInformada)) {
         document.getElementById('confirmarMaiuscula').classList.add('erro')
         document.getElementById('confirmarMaiuscula').classList.remove('sucesso')
-    } else{
+    } else {
         document.getElementById('confirmarMaiuscula').classList.remove('erro')
         document.getElementById('confirmarMaiuscula').classList.add('sucesso')
     }
@@ -37,7 +39,7 @@ function mostrarErroSenha(){
     if (!/\d/.test(senhaInformada)) {
         document.getElementById('confirmarNumero').classList.add('erro')
         document.getElementById('confirmarNumero').classList.remove('sucesso')
-    } else{
+    } else {
         document.getElementById('confirmarNumero').classList.remove('erro')
         document.getElementById('confirmarNumero').classList.add('sucesso')
     }
@@ -45,7 +47,7 @@ function mostrarErroSenha(){
     if (!/[a-z]/.test(senhaInformada)) {
         document.getElementById('confirmarMinuscula').classList.add('erro')
         document.getElementById('confirmarMinuscula').classList.remove('sucesso')
-    } else{
+    } else {
         document.getElementById('confirmarMinuscula').classList.remove('erro')
         document.getElementById('confirmarMinuscula').classList.add('sucesso')
     }
@@ -53,8 +55,15 @@ function mostrarErroSenha(){
     if (senhaInformada.length < 8) {
         document.getElementById('confirmarTotalDeDigitos').classList.add('erro')
         document.getElementById('confirmarTotalDeDigitos').classList.remove('sucesso')
-    } else{
+    } else {
         document.getElementById('confirmarTotalDeDigitos').classList.remove('erro')
         document.getElementById('confirmarTotalDeDigitos').classList.add('sucesso')
     }
+    return
+}
+
+function limparCampos() {
+    let emailInformado = document.getElementById('inEmail').value = ''
+    let senhaInformada = document.getElementById('inSenha').value = ''
+    return
 }

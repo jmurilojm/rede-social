@@ -1,8 +1,9 @@
 /* DUAS FORMAS DE IMPORTACAO DE FONTS */
 /* VIA NET */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* VIA SRC - ARQUIVO BAIXADO */
-@font-face{
+@font-face {
     font-family: "Work Sans";
     src: url(../fonts/WorkSans-VariableFont_wght.ttf);
 }
@@ -19,7 +20,7 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     cursor: pointer;
     text-align: center;
@@ -102,7 +103,8 @@ main {
     border-radius: 8px;
     padding: 8px 10px;
 }
-.formulario-grupo span{
+
+.formulario-grupo span {
     margin-bottom: 10px;
 }
 
@@ -166,7 +168,7 @@ main {
     background-color: red;
 }
 
-.msmErro{
+.msmErro {
     color: red;
     font-size: .6rem;
 }

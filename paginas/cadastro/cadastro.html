@@ -17,13 +17,15 @@
         <form class="formulario-center" action="" onsubmit="return false" method="post">
             <div class="formulario-grupo">
                 <label for="">Nome</label>
-                <input type="text" name="nome" id="inNome" placeholder="Nome completo" onkeyup="limparMensagemDeErro('outMsmErroName')">
+                <input type="text" name="nome" id="inNome" placeholder="Nome completo"
+                    onkeyup="limparMensagemDeErro('outMsmErroName')">
                 <span class="msmErro" id="outMsmErroName"></span>
             </div>
 
             <div class="formulario-grupo">
                 <label for="">E-Mail</label>
-                <input type="email" name="e-mail" id="inEmail" placeholder="exemplo@email.com" onkeyup="limparMensagemDeErro('outMsmErroEmail')">
+                <input type="email" name="e-mail" id="inEmail" placeholder="exemplo@email.com"
+                    onkeyup="limparMensagemDeErro('outMsmErroEmail')">
                 <span class="msmErro" id="outMsmErroEmail"></span>
             </div>
 
@@ -31,7 +33,8 @@
                 <label for="">Senha</label>
                 <div class="input-icone">
                     <input type="password" name="senha" id="inSenha" onkeyup="limparMensagemDeErro('outMsmErroSenha')">
-                    <i class="fa-regular fa-eye-slash" id="iconeSenha" onclick="mostrarSenha('inSenha','iconeSenha')"></i>
+                    <i class="fa-regular fa-eye-slash" id="iconeSenha"
+                        onclick="mostrarSenha('inSenha','iconeSenha')"></i>
                 </div>
                 <span class="msmErro" id="outMsmErroSenha"></span>
             </div>
@@ -39,8 +42,10 @@
             <div class="formulario-grupo">
                 <label for="">Confirme a senha</label>
                 <div class="input-icone">
-                    <input type="password" name="confirmacao-senha" id="inConfirmacaoSenha" onkeyup="limparMensagemDeErro('outMsmErroConfrimacaoSenha')">
-                    <i class="fa-regular fa-eye-slash" id="iconeConfirmacaoSenha" onclick="mostrarSenha('inConfirmacaoSenha','iconeConfirmacaoSenha')"></i>
+                    <input type="password" name="confirmacao-senha" id="inConfirmacaoSenha"
+                        onkeyup="limparMensagemDeErro('outMsmErroConfrimacaoSenha')">
+                    <i class="fa-regular fa-eye-slash" id="iconeConfirmacaoSenha"
+                        onclick="mostrarSenha('inConfirmacaoSenha','iconeConfirmacaoSenha')"></i>
                 </div>
                 <span class="msmErro" id="outMsmErroConfrimacaoSenha"></span>
             </div>
