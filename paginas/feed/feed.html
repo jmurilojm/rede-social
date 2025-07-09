@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/fontawesome-free-6.7.2-web/css/all.min.css">
 </head>
 
-<body>
+<body onload="pegarLocalizacao()">
     <header>
         <div class="icone-menu">
             <i class="fa-solid fa-bars"></i>
@@ -225,6 +225,28 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function pegarLocalizacao(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(pegarMsmSucesso, pegarMsmErro)
+            } else{
+                console.log('O navegador não suportado')
+            }
+        }
+
+        function pegarMsmSucesso(posicao){
+            //console.log('Mensagem de sucesso: ',posicao)
+            window.localStorage.setItem('latitude', posicao.coords.latitude)
+            window.localStorage.setItem('longitude', posicao.coords.longitude)
+
+            alert(posicao.coords.latitude + ' | ' + posicao.coords.longitude)
+        }
+        function pegarMsmErro(error){
+            //console.log('Mensagem de error: ',error)
+            console.log(error.message)
+        }
+    </script>
 </body>
 
 </html>
