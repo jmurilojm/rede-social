@@ -8,7 +8,16 @@ function registrar(event) {
     const confirmacaoSenha = document.getElementById('inConfirmacaoSenha').value
 
     if (validarFormulario(nomeInformado, emailInformado, senhaInformada, confirmacaoSenha)) {
-        alert('Cadastrado com sucesso')
+        //alert('Cadastrado com sucesso')
+
+        //Biblioteca: usei CDN (https://sweetalert2.github.io/)
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Cadastrado com sucesso!",
+            showConfirmButton: false,
+            timer: 1500
+          });
 
         // limpar campos
         limparCampos()
